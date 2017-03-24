@@ -560,6 +560,9 @@ body {
 .row:after {
   clear: both;
 }
+.hidden {
+  display: none;
+}
 .wrapper {
   width: 100%;
   min-height: 100%;
