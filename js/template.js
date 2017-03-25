@@ -1,3 +1,4 @@
+/* Created by WeGeeks */
 function equalHeight(group) {
     var tallest = 0;
     group.each(function() {
