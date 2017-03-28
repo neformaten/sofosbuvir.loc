@@ -662,7 +662,7 @@ body {
   position: relative;
   height: 56px;
   border: 1px #ededed solid;
-  padding: 0 20px 0 67px;
+  padding: 7px 20px 0 67px;
   margin: 5px 0 0 0;
   line-height: 20px;
   font-weight: 300;
@@ -746,6 +746,10 @@ body {
 .slideshow {
   margin: 0 0 40px 0;
 }
+.mainslider {
+  height: 500px;
+  overflow: hidden;
+}
 .mainslider-item-img {
   position: relative;
   z-index: 2;
@@ -761,8 +765,28 @@ body {
   max-width: 580px;
 }
 .benefits-item {
+  width: 100%;
+  float: left;
   border: 1px #ededed solid;
   padding: 12px 15px;
+}
+.benefits-item-img {
+  float: left;
+  margin: 6px 0 0 0;
+}
+.benefits-item-textWrap {
+  margin: 0 0 0 65px;
+}
+.benefits-item-title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.benefits-item-text {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 300;
 }
 .content {
   padding: 0 0 227px;
