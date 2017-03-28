@@ -434,12 +434,12 @@ body {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .col-xs-1,
 .col-sm-1,
