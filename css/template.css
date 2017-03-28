@@ -326,6 +326,9 @@ h3 {
 p {
   margin: 0 0 18px 0;
 }
+a {
+  color: #1241ce;
+}
 button,
 [type="submit"],
 [type="button"],
@@ -380,9 +383,6 @@ hr {
   max-width: 100%;
   height: auto;
 }
-.pagecontent img {
-  max-width: 100%;
-}
 .img-rounded {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -413,7 +413,7 @@ html {
   height: 100%;
 }
 body {
-  font: 14px/18px 'Open Sans', Arial, sans-serif;
+  font: 14px/21px 'Open Sans', Arial, sans-serif;
   color: #232323;
   width: 100%;
   max-width: 100%;
@@ -564,6 +564,11 @@ body {
 .hidden {
   display: none;
 }
+.block {
+  width: 100%;
+  float: left;
+  margin: 0 0 40px 0;
+}
 .block:before,
 .block:after {
   content: " ";
@@ -581,9 +586,8 @@ body {
   padding: 0;
 }
 .header {
-  width: 100%;
   padding: 26px 0 30px;
-  float: left;
+  margin: 0;
 }
 .mobilemenu {
   display: none;
@@ -613,11 +617,13 @@ body {
   display: block;
   float: left;
   font-size: 14px;
+  font-weight: 300;
   line-height: 24px;
 }
 .head-delivery {
   width: 210px;
   padding: 10px 10px 10px 46px;
+  margin: 5px 0 0 0;
   font-size: 12px;
   line-height: 18px;
   font-weight: 900;
@@ -625,29 +631,70 @@ body {
   background: #f1f0ea url("../images/delivery.png") no-repeat 10px center;
 }
 .head-phone {
-  font-size: 16px;
+  margin: 5px 0 0 0;
+  font-size: 17px;
   line-height: 32px;
   font-weight: 600;
+  text-align: right;
+  position: relative;
+}
+.head-phone:after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  background: url("../images/phone.png") no-repeat left top;
 }
 .head-callback-link {
-  font-size: 14px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 0 0 20px;
+  font-size: 13px;
+  line-height: 18px;
   font-weight: 300;
   color: #1241ce;
   border-bottom: 1px #1241ce dotted;
 }
 .head-cart {
+  position: relative;
   height: 56px;
   border: 1px #ededed solid;
+  padding: 0 20px 0 67px;
+  margin: 5px 0 0 0;
+  line-height: 20px;
+  font-weight: 300;
+  background: url("../images/cart.png") no-repeat 15px 8px;
   -webkit-border-radius: 28px;
   -moz-border-radius: 28px;
   border-radius: 28px;
 }
+.head-cart-quantityNum {
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  color: #fff;
+  background: #e50019;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
 .topmenu {
-  width: 100%;
   height: 60px;
   line-height: 60px;
-  float: left;
-  background: #4c97f6;
+  margin: 0 0 30px 0;
+  background: #4e9bf8;
+  background: -moz-linear-gradient(0deg, #4e9bf8 0%, #1241ce 100%);
+  background: -webkit-linear-gradient(0deg, #4e9bf8 0%, #1241ce 100%);
+  background: -o-linear-gradient(0deg, #4e9bf8 0%, #1241ce 100%);
+  background: -ms-linear-gradient(0deg, #4e9bf8 0%, #1241ce 100%);
+  background: linear-gradient(90deg, #4e9bf8 0%, #1241ce 100%);
 }
 .topmenu ul {
   display: table;
@@ -659,6 +706,7 @@ body {
   display: table-cell;
   border-left: 1px #62a1f5 solid;
   border-right: 1px #62a1f5 solid;
+  position: relative;
 }
 .topmenu ul li a {
   display: block;
@@ -667,18 +715,64 @@ body {
   font-size: 14px;
   color: #fff;
 }
+.topmenu ul li.active a,
+.topmenu ul li a:hover {
+  background: #1241ce;
+}
 .topmenu ul li ul {
   display: none;
+  position: absolute;
+  z-index: 999999;
+  text-align: left;
+  background: #4e9bf8;
+  min-width: 255px;
+}
+.topmenu ul li ul li {
+  display: block;
+  float: none;
+  border: none;
+  line-height: 19px;
+}
+.topmenu ul li ul li a {
+  padding: 10px 25px;
+}
+.topmenu ul li ul li.active a,
+.topmenu ul li ul li a:hover {
+  background: #3778e8;
+}
+.topmenu ul li:hover ul {
+  display: block;
+}
+.slideshow {
+  margin: 0 0 40px 0;
+}
+.mainslider-item-img {
+  position: relative;
+  z-index: 2;
+}
+.mainslider-item-title {
+  font-size: 44px;
+  line-height: 48px;
+  font-weight: 300;
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  left: 40px;
+  max-width: 580px;
+}
+.benefits-item {
+  border: 1px #ededed solid;
+  padding: 12px 15px;
 }
 .content {
-  padding: 0 0 100px;
+  padding: 0 0 227px;
+  margin: 0 0 0 0;
 }
 .footer {
-  width: 100%;
-  margin: -100px auto 0;
-  height: 100px;
-  float: left;
-  background: #f5f5f5;
+  margin: -227px auto 0;
+  height: 227px;
+  background: #f7f7f6;
+  border-top: 1px #e8e7df solid;
   position: relative;
 }
 .copy {

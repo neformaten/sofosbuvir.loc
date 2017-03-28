@@ -2,6 +2,8 @@
 @import 'mixins.styl';
 @import 'slider.styl';
 @import 'typo.styl';
+a
+  color #1241ce
 button,[type="submit"],[type="button"],[type="reset"]
   cursor pointer
 ul.menu,ul.menu ul,ul.nolist,.slideshow ul,.pagination ul,ul.breadcrumb
@@ -36,9 +38,6 @@ hr
   display block
   max-width 100%
   height auto
-.pagecontent
-  img
-    max-width 100%
 .img-rounded
   border-radius 6px
 .img-thumbnail
@@ -56,7 +55,7 @@ hr
 html
   height 100%
 body
-  font 14px/18px fontFam, sans-serif
+  font 14px/21px fontFam, sans-serif
   color #232323
   width 100%
   max-width 100%
@@ -126,6 +125,10 @@ body
   clear both
 .hidden
   display none
+.block
+  width 100%
+  float left
+  margin 0 0 40px 0
 .block:before,
 .block:after
   content " "
@@ -140,9 +143,8 @@ body
   margin 0
   padding 0
 .header
-  width 100%
   padding 26px 0 30px
-  float left
+  margin 0
 .mobilemenu
   display none
   cursor pointer
@@ -166,34 +168,73 @@ body
       display block
       float left
       font-size 14px
+      font-weight 300
       line-height 24px
 .head-delivery
   width 210px
   padding 10px 10px 10px 46px
+  margin 5px 0 0 0
   font-size 12px
   line-height 18px
   font-weight 900
   text-transform uppercase
   background #f1f0ea url(../images/delivery.png) no-repeat 10px center
 .head-phone
-  font-size 16px
+  margin 5px 0 0 0
+  font-size 17px
   line-height 32px
   font-weight 600
+  text-align right
+  position relative
+  &:after
+    content ''
+    display block
+    width 30px
+    height 30px
+    position absolute
+    left -20px
+    top 2px
+    background url(../images/phone.png) no-repeat left top
 .head-callback-link
-  font-size 14px
+  cursor pointer
+  display inline-block
+  margin 0 0 0 20px
+  font-size 13px
+  line-height 18px
   font-weight 300
   color #1241ce
   border-bottom 1px #1241ce dotted
 .head-cart
+  position relative
   height 56px
   border 1px #ededed solid
+  padding 0 20px 0 67px
+  margin 5px 0 0 0
+  line-height 20px
+  font-weight 300
+  background url(../images/cart.png) no-repeat 15px 8px
   border-radius 28px
+.head-cart-quantityNum
+  position absolute
+  top 10px
+  left 40px
+  width 23px
+  height 23px
+  line-height 23px
+  text-align center
+  color #fff
+  background #e50019
+  border-radius 50%
 .topmenu
-  width 100%
   height 60px
   line-height 60px
-  float left
-  background #4c97f6
+  margin 0 0 30px 0
+  background rgb(78, 155, 248)
+  background -moz-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -webkit-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -o-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background -ms-linear-gradient(0deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
+  background linear-gradient(90deg, rgb(78, 155, 248) 0%, rgb(18, 65, 206) 100%)
   ul
     display table
     width 100%
@@ -203,22 +244,58 @@ body
       display table-cell
       border-left 1px #62a1f5 solid
       border-right  1px #62a1f5 solid
+      position relative
       a
         display block
         padding 0 20px
         text-decoration none
         font-size 14px
         color #fff
+      &.active a,& a:hover
+          background #1241ce
       ul
         display none
+        position absolute
+        z-index 999999
+        text-align left
+        background #4e9bf8
+        min-width 255px
+        li
+          display block
+          float none
+          border none
+          line-height 19px
+          a
+            padding 10px 25px
+          &.active a,& a:hover
+            background #3778e8
+      &:hover ul
+        display block
+.slideshow
+  margin 0 0 40px 0
+.mainslider-item-img
+  position relative
+  z-index 2
+.mainslider-item-title
+  font-size 44px
+  line-height 48px
+  font-weight 300
+  position absolute
+  z-index 3
+  top 20px
+  left 40px
+  max-width 580px
+.benefits-item
+  border 1px #ededed solid
+  padding 12px 15px
 .content
-  padding 0 0 100px
+  padding 0 0 227px
+  margin 0 0 0 0
 .footer
-  width 100%
-  margin -100px auto 0
-  height 100px
-  float left
-  background #f5f5f5
+  margin -227px auto 0
+  height 227px
+  background #f7f7f6
+  border-top 1px #e8e7df solid
   position relative
 .copy
   float left
