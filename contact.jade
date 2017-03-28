@@ -86,9 +86,10 @@ html(lang='ru')
                             .col-lg-7
                                     form.callback-contact(action='#' method='post')
                                         .callback-contact-title Обратный звонок
-                                        input.callback-contact-name(type='text' name='callback-contact-name' label='Ваше имя' value='')
-                                        input.callback-contact-phone(type='tel' name='callback-contact-phone' label='Ваш телефон' value='' required)
-                                        input.callback-contact-text(type='text' name='callback-contact-text' label='Ваше сообщение' value='' required)
+                                        .label Ваше Имя
+                                            input.callback-contact-name(type='text' name='callback-contact-name' placeholder='Ваше имя' value='')
+                                        input.callback-contact-phone(type='tel' name='callback-contact-phone' placeholder='Ваш телефон' value='' required)
+                                        input.callback-contact-text(type='text' name='callback-contact-text' placeholder='Ваше сообщение' value='' required)
                                         button.callback-contact-btn(type='submit' name='callback-contact-btn'  value='sending') Отправить
 
                 .container
