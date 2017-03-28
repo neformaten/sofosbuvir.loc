@@ -309,19 +309,20 @@ h4,
 h5,
 h6 {
   margin: 0 0 20px 0;
+  font-weight: normal;
 }
 h1 {
   margin: 0 0 25px 0;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 31px;
 }
 h2 {
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 31px;
 }
 h3 {
-  font-size: 30px;
-  line-height: 33px;
+  font-size: 25px;
+  line-height: 28px;
 }
 p {
   margin: 0 0 18px 0;
@@ -803,6 +804,7 @@ body {
 }
 .products-item {
   padding: 20px 10px;
+  margin: 0 0 30px 0;
   border: 1px #ededed solid;
   text-align: center;
 }
@@ -843,6 +845,35 @@ body {
   color: #e50019;
   background: #fff;
 }
+.sertificates {
+  padding: 25px 0 30px;
+  background: url("../images/sert-bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+.sertificates .col-lg-3 {
+  text-align: center;
+}
+.sertificates .col-lg-3.first {
+  text-align: left;
+}
+.sertificates .col-lg-3.last {
+  text-align: right;
+}
+.sertificates-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  width: 100%;
+}
+.sertificates-list:after {
+  content: '';
+  display: inline-block;
+  margin-left: 100%;
+}
+.sertificates-list li {
+  display: inline-block;
+}
 .content {
   padding: 0 0 227px;
   margin: 0 0 0 0;
@@ -856,12 +887,6 @@ body {
 }
 .copy {
   float: left;
-}
-.developer {
-  float: right;
-}
-.test {
-  background: #999;
 }
 @media screen and (max-width: 1230px) {
   .container {

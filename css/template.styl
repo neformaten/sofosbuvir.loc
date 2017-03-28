@@ -316,6 +316,7 @@ body
   font-weight 300
 .products-item
   padding 20px 10px
+  margin 0 0 30px 0
   border 1px #ededed solid
   text-align center
   &:hover
@@ -342,6 +343,28 @@ body
     border-color #e50019
     color #e50019
     background #fff
+.sertificates
+  padding 25px 0 30px
+  background url(../images/sert-bg.jpg) no-repeat center center
+  background-size cover
+  .col-lg-3
+    text-align center
+  .col-lg-3.first
+    text-align left
+  .col-lg-3.last
+    text-align right
+.sertificates-list
+  list-style none
+  margin 0
+  padding 0
+  text-align justify
+  width 100%
+  &:after
+    content ''
+    display inline-block
+    margin-left 100%
+  li
+    display inline-block
 .content
   padding 0 0 227px
   margin 0 0 0 0
@@ -353,10 +376,6 @@ body
   position relative
 .copy
   float left
-.developer
-  float right
-.test
-  background #999
 @media screen and (max-width: 1230px)
   .container
     width 990px
