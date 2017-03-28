@@ -329,6 +329,19 @@ p {
 a {
   color: #1241ce;
 }
+a:hover {
+  text-decoration: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Open Sans', Arial;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
 button,
 [type="submit"],
 [type="button"],
@@ -787,6 +800,48 @@ body {
   font-size: 13px;
   line-height: 18px;
   font-weight: 300;
+}
+.products-item {
+  padding: 20px 10px;
+  border: 1px #ededed solid;
+  text-align: center;
+}
+.products-item:hover {
+  -webkit-shadow: 0px 0px 12px 0px rgba(0,0,0,0.12);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.12);
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.12);
+}
+.products-item-img {
+  display: inline-block;
+  height: 190px;
+}
+.products-item-title {
+  display: inline-block;
+  margin: 7px 0;
+}
+.products-item-price {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.products-item-btn {
+  display: inline-block;
+  color: #212121;
+  border: 1px transparent solid;
+  background: #f1f0ea;
+  padding: 8px 25px 10px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+.products-item-btn:hover {
+  border-color: #e50019;
+  color: #e50019;
+  background: #fff;
 }
 .content {
   padding: 0 0 227px;

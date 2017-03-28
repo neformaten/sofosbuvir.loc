@@ -4,6 +4,13 @@
 @import 'typo.styl';
 a
   color #1241ce
+  &:hover
+    text-decoration none
+button, input, optgroup, select, textarea
+  font-family fontFam
+  font-size 14px
+  margin 0
+  padding 0
 button,[type="submit"],[type="button"],[type="reset"]
   cursor pointer
 ul.menu,ul.menu ul,ul.nolist,.slideshow ul,.pagination ul,ul.breadcrumb
@@ -307,6 +314,34 @@ body
   font-size 13px
   line-height 18px
   font-weight 300
+.products-item
+  padding 20px 10px
+  border 1px #ededed solid
+  text-align center
+  &:hover
+    box-shadow 0px 0px 12px 0px rgba(0, 0, 0, 0.12)
+.products-item-img
+  display inline-block
+  height 190px
+.products-item-title
+  display inline-block
+  margin 7px 0
+.products-item-price
+  font-size 18px
+  font-weight 600
+  margin 0 0 10px 0
+.products-item-btn
+  display inline-block
+  color #212121
+  border 1px transparent solid
+  background #f1f0ea
+  padding 8px 25px 10px
+  border-radius 25px
+  transition all ease .5s
+  &:hover
+    border-color #e50019
+    color #e50019
+    background #fff
 .content
   padding 0 0 227px
   margin 0 0 0 0
