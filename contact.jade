@@ -74,22 +74,27 @@ html(lang='ru')
                                         td.tel +7 951 652 99 31
                                     tr
                                         td E-mail
-                                        td.email info@sofosbyvir.ru
+                                        td.email
+                                            a(href="mailto:info@sofosbyvir.ru") info@sofosbyvir.ru
                                     tr
                                         td Вконтакте
-                                        td.url vk.com/sofosbuvir_ledipasvir_hepcinat
+                                        td
+                                            a(href="vk.com/sofosbuvir_ledipasvir_hepcinat") vk.com/sofosbuvir_ledipasvir_hepcinat
                                     tr
                                         td Адрес
-                                        td.adr г. Москва Шлюзовая наб., вл. 4/2
-                                    tr
+                                        td.adr
+                                            span.locality г. Москва
+                                            span.street-address  Шлюзовая наб., вл. 4/2
                                 .card-map Карта
                             .col-lg-7
                                     form.callback-contact(action='#' method='post')
-                                        .callback-contact-title Обратный звонок
-                                        .label Ваше Имя
-                                            input.callback-contact-name(type='text' name='callback-contact-name' placeholder='Ваше имя' value='')
-                                        input.callback-contact-phone(type='tel' name='callback-contact-phone' placeholder='Ваш телефон' value='' required)
-                                        input.callback-contact-text(type='text' name='callback-contact-text' placeholder='Ваше сообщение' value='' required)
+                                        .callback-contact-title Форма обратной связи
+                                        .label Ваше имя:
+                                            input.callback-contact-name(type='text' name='callback-contact-name' value='')
+                                        .label Ваш телефон:
+                                            input.callback-contact-phone(type='tel' name='callback-contact-phone' value='' required)
+                                        .label Ваше сообщение:
+                                            input.callback-contact-text(type='text' name='callback-contact-text' value='' required)
                                         button.callback-contact-btn(type='submit' name='callback-contact-btn'  value='sending') Отправить
 
                 .container
@@ -131,29 +136,6 @@ html(lang='ru')
                                     .address-item Владимир
                                 .address-title.js-accordeone
                                     .address-item Волгоград
-
-
-
-
-
-
-
-
-
-
-                                    <div>
-                                    <span class="category">Кафе</span>
-                                    <span class="fn org">Ромашка</span>
-                                    </div>
-                                    <div class="adr">
-                                    <span class="locality">г. Солнечный</span>,
-                                    <span class="street-address">просп. Романтиков, д. 21</span>
-                                    </div>
-                                    <div>Телефон: <span class="tel">+7 (890) 123-45-67</span></div>
-                                    <div>Мы работаем <span class="workhours">ежедневно с 11:00 до 24:00</span>
-                                    <span class="url">
-                                    <span class="value-title" title="http://www.romashka-cafe.ru"> </span>
-                                    </span>
         footer.footer.block
             .container
                 .row
