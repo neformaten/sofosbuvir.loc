@@ -874,6 +874,9 @@ body {
 .sertificates-list li {
   display: inline-block;
 }
+.sertificates-img {
+  border: 5px rgba(255,255,255,0.4) solid;
+}
 .content {
   padding: 0 0 227px;
   margin: 0 0 0 0;
